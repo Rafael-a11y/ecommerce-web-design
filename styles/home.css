@@ -355,12 +355,14 @@ h6
 {
     display: grid;
     grid-template-columns: 50% 50%;
-    border: var(--borda-principal);
+    /* border: var(--borda-principal); */
 }
+
 
 .secao-nosso-servico > img
 {
     border-right: var(--borda-principal);
+    border-bottom: var(--borda-principal);
 }
 
 .secao-nosso-servico__our-service
@@ -491,6 +493,12 @@ h6
     display: grid;
     row-gap: var(--espacamento-primario);
     border: var(--borda-principal);
+    border-bottom: none;
+}
+
+.footer__primeiro-div
+{
+    border-left: none;
 }
 
 .divisao__texto
@@ -529,6 +537,7 @@ h6
 .footer__sobre-nos
 {
     align-content: start;
+    border-right: none;
 }
 
 .sobre-nos__paragrafos
