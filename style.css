@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+@import url("./styles/index/pagina-inicial.css");
+@import url("./styles/home/home-definicoes-gerais.css");
+@import url("./styles/home/cabecalho.css");
+@import url("./styles/home/container.css");
+@import url("./styles/home/secao-nosso-servico.css");
+@import url("./styles/home/footer.css");
+
+:root
+{
+    --preto-primario: #000;
+    --cor-de-fundo: #FFF;
+    --borda-principal: 1px solid black;
+    --fonte-principal: 'Inter', sans-serif;
+    --peso-primario: 400;
+    --peso-secundario: 500;
+    --peso-terciario: 600;
+    --tamanho-fonte-primario: 1rem;
+    --tamanho-fonte-secundario: 2.375rem;
+    --tamanho-fonte-terciario: 3.125rem;
+    --tamanho-fonte-quartenario: 0.875rem;
+    --tamanho-fonte-quinario: 1.125rem;
+    --tamanho-fonte-senario: 1.3125rem;
+    --espacamento-primario: 1.5rem;
+    --espacamento-secundario: 5rem;
+    --espacamento-terciario: 1rem;
+    --espacamento-quartenario: 00.875rem;
+    --espacamento-quinario: 4rem;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+}

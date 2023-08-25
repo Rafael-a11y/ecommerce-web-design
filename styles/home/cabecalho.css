@@ -1,0 +1,34 @@
+.cabecalho
+{
+    display: flex;
+    justify-content: space-between;
+    border: var(--borda-principal);
+}
+
+.cabecalho__divisao
+{
+    column-gap: 0;
+}
+
+/* section
+{
+    border: var(--borda-principal);
+} */
+
+.cabecalho__divisao > a
+{
+    display: inline-block;
+    padding: var(--espacamento-primario) 2rem;
+    
+    
+}
+
+.cabecalho__divisao__ancora-esquerda
+{
+    border-right: var(--borda-principal);
+}
+
+.cabecalho__divisao__ancora-direita
+{
+    border-left: var(--borda-principal);
+}
