@@ -4,19 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <title>Homepage</title>
 </head>
 <body id="corpo-pagina-home">
     <header class="cabecalho">
         <div class="cabecalho__divisao">
-            <a class="cabecalho__divisao__ancora-esquerda ancora" href="">Shop</a>
-            <a class="cabecalho__divisao__ancora-esquerda ancora" href="">Contact</a>
+            <a class="cabecalho__divisao__ancora-esquerda" href="">Shop</a>
+            <a class="cabecalho__divisao__ancora-esquerda" href="">Contact</a>
         </div>
         <div class="cabecalho__divisao">
             <a class="cabecalho__divisao__ancora-direita ancora" href="">Sign in</a>
             <a class="cabecalho__divisao__ancora-direita ancora" href="">Cart</a>
         </div>
+        <div class="cabecalho__div-menu-hamburguer">
+            <input type="checkbox" id="menu" class="cabecalho__div-menu-hamburguer__input">
+            <label for="menu">
+                <span class="cabecalho__div-menu-hamburguer__span"></span>
+            </label>
+            <ul class="cabecalho__div-menu-hamburguer__lista">
+                <li class="cabecalho__div-menu-hamburguer__lista__item">
+                    <a href="#" class="cabecalho__div-menu-hamburguer__lista__item__link">Sign In</a>
+                </li>
+                <li class="cabecalho__div-menu-hamburguer__lista__item">
+                    <a href="#" class="cabecalho__div-menu-hamburguer__lista__item__link">Shop</a>
+                </li>
+                <li class="cabecalho__div-menu-hamburguer__lista__item">
+                    <a href="#" class="cabecalho__div-menu-hamburguer__lista__item__link">Service</a>
+                </li>
+                <li class="cabecalho__div-menu-hamburguer__lista__item">
+                    <a href="#" class="cabecalho__div-menu-hamburguer__lista__item__link">Contact</a>
+                </li>
+                <li class="cabecalho__div-menu-hamburguer__lista__item">
+                    <a href="#" class="cabecalho__div-menu-hamburguer__lista__item__link">About Us</a>
+                </li>
+                <ul class="cabecalho__div-menu-hamburguer__lista__lista">
+                    <li><a href="#">Shipping & returns</a></li>
+                    <li><a href="#">Terms & conditions</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+                <div class="cabecalho__div-menu-hamburguer__lista__div">
+                    <a href=""><img src="./assets/Brands/Instagram.png" alt="ícone de Instagram"></a>
+                    <a href=""><img src="./assets/Brands/Pinterest.png" alt="Ícone de Pinterest"></a>
+                    <a href=""><img src="./assets/Brands/Facebook.png" alt="ícone de Facebook"></a>
+                    <a href=""><img src="./assets/Brands/Twitter.png" alt="ícone de Twitter"></a>
+                    <a href=""><img src="./assets/Brands/Telegram.png" alt="ícone de Telegram"></a>
+                </div>
+            </ul>
+        </div>
+        <span class="cabecalho__span-sacola">
+            <a href="facebook.com" target="_blank"><img src="./assets/shopping_bag.svg" alt="ícone de Sacola" class="cabecalho__span-sacola__imagem"></a>
+        </span>
     </header>
     <main>
         <section class="container">
@@ -46,9 +85,7 @@
         </section>
 
         <section class="container">
-            <div class="container__divisao">
-
-            </div>
+            <div class="container__divisao container__invisivel"></div>
             <div class="container-grade">
                 <div class="container-grade__titulo">
                     <h3>Live Plants</h3>
@@ -113,8 +150,8 @@
         </section>
         
         <section class="container">
-            <div>
-                <div class="container__titulo">
+            <div class="container__responsivo">
+                <div class="container__titulo container__responsivo__contato">
                     <h2 class="container__titulo-titulo">To Contact Us</h2>
                     <p>
                         We will call you back
@@ -126,31 +163,41 @@
                 </div>
 
                 <div class="container__dados">
-
-                    <h3 id="container__dados__phone">Phone</h3>
-                    <h3>Address</h3>
-                    <div id="container__dados__contato" class="container__dados__contato">
-                        <p>+380980099777</p>
-                        <p>+380980099111</p>
+                    <div class="container__dados__contato">
+                        <div  class="container__dados__contato__titulo">
+                            <h3>Phone</h3>
+                        </div>
+                        <div class="container__dados__contato__texto">
+                            <p class="container__dados__contato__texto__primeiro">+380980099777</p>
+                            <p class="container__dados__contato__texto__segundo">+380980099111</p>
+                        </div>
                     </div>
 
                     
                     <div class="container__dados__contato">
-                        <p>OPENING HOURS: 8 TO 11 P.M.</p>
-                        <p><img src="./assets/pin_drop.png" alt=""> 15/4 Khreshchatyk Street, Kyiv </p>
+                        <div  class="container__dados__contato__titulo">
+                            <h3>Address</h3>
+                        </div>
+                        <div class="container__dados__contato__texto">
+                            <p class="container__dados__contato__texto__primeiro">OPENING HOURS: 8 TO 11 P.M.</p>
+                            <p class="container__dados__contato__texto__segundo"><img src="./assets/pin_drop.png" alt=""> 15/4 Khreshchatyk Street, Kyiv </p>
+                        </div>
                     </div>
                 </div>
 
             </div>
             <div class="container__endereco">
-                <h3 class="container__endereco__titulo">Folow Us</h3>
-                <div class="container__endereco__redes-sociais">
-                    <a href=""><img src="./assets/Brands/Instagram.png" alt="ícone de Instagram"></a>
-                    <a href=""><img src="./assets/Brands/Pinterest.png" alt="Ícone de Pinterest"></a>
-                    <a href=""><img src="./assets/Brands/Facebook.png" alt="ícone de Facebook"></a>
-                    <a href=""><img src="./assets/Brands/Twitter.png" alt="ícone de Twitter"></a>
-                    <a href=""><img src="./assets/Brands/Telegram.png" alt="ícone de Telegram"></a>
-                </div>   
+                <img src="./assets/right column.png" alt="Calçada da Kyiv Luxe Bouquets" class="container__endereco__imagem">
+                <div class="container__endereco__div">
+                        <h3 class="container__endereco__titulo">Folow Us</h3>
+                    <div class="container__endereco__redes-sociais">
+                        <a href=""><img src="./assets/Brands/Instagram.png" alt="ícone de Instagram"></a>
+                        <a href=""><img src="./assets/Brands/Pinterest.png" alt="Ícone de Pinterest"></a>
+                        <a href=""><img src="./assets/Brands/Facebook.png" alt="ícone de Facebook"></a>
+                        <a href=""><img src="./assets/Brands/Twitter.png" alt="ícone de Twitter"></a>
+                        <a href=""><img src="./assets/Brands/Telegram.png" alt="ícone de Telegram"></a>
+                    </div>   
+                </div>
             </div>
         </section>
 
@@ -185,8 +232,8 @@
                     <img class="division__seta" src="./assets/right arrow.png" alt="">
                     <strong class="division__author">– Ronald Richards</strong>
                 </div>
+                <a class="secao-octonaria__anchor" href="">Read reviews</a>
             </div>
-            <a class="secao-octonaria__anchor" href="">Read reviews</a>
         </section>
     </main>
     <footer class="footer">
@@ -252,6 +299,17 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "bullets",
+        },
+      });  
+    </script>
 </body>
 </html>
 

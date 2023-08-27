@@ -64,15 +64,16 @@
 
 {
 
-    body
+    #corpo-pagina-inicial
     {
         overflow-y: visible;
         overflow-x: visible;
+        height: 100vh;
     }
     .secao-apresentacao
     {
         grid-template-columns: 100%;
-        margin: 1rem 3rem 0 3rem;
+        padding: 4rem 4rem 0 4rem;
     }
 
     .secao-apresentacao__conteudo > h1

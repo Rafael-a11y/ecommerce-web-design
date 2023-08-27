@@ -10,6 +10,16 @@
     column-gap: 0;
 }
 
+.cabecalho__div-menu-hamburguer
+{
+    display: none;
+}
+
+.cabecalho__span-sacola
+{
+    display: none;
+}
+
 /* section
 {
     border: var(--borda-principal);
@@ -31,4 +41,92 @@
 .cabecalho__divisao__ancora-direita
 {
     border-left: var(--borda-principal);
+}
+
+@media screen and (max-width:768px)
+{
+    .cabecalho__divisao,.cabecalho__div-menu-hamburguer__input,.cabecalho__div-menu-hamburguer__lista
+    {
+        display: none;
+    }
+
+    .cabecalho__div-menu-hamburguer
+    {
+        display: block;
+        position: relative;
+    }
+
+    .cabecalho__div-menu-hamburguer__input:checked~.cabecalho__div-menu-hamburguer__lista
+    {
+        display: block;
+    }
+
+    .cabecalho__div-menu-hamburguer__input:checked~label>.cabecalho__div-menu-hamburguer__span
+    {
+        background-image: url("../../assets/close-button.svg");
+    }
+
+    .cabecalho__div-menu-hamburguer__span
+    {
+        height: 40px;
+        width: 40px;
+        background-image: url("../../assets/Menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+
+    .cabecalho__div-menu-hamburguer__lista
+    {
+        box-sizing: border-box;
+        position: absolute;
+        width: 384px;
+        background-color: var(--cor-de-fundo);
+        border: var(--borda-principal);
+    }
+
+    .cabecalho__div-menu-hamburguer__lista__item,.cabecalho__div-menu-hamburguer__lista__lista,.cabecalho__div-menu-hamburguer__lista__div
+    {
+        box-sizing: border-box;
+        padding: 24px;
+        border-bottom: var(--borda-principal);
+    }
+
+    .cabecalho__div-menu-hamburguer__lista__item__link
+    {
+        font-size: 21px;
+        font-weight: 500;
+    }   
+
+    .cabecalho__div-menu-hamburguer__lista__lista
+    {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    .cabecalho__div-menu-hamburguer__lista__lista>li>a
+    {
+        font-weight: 500;
+    } 
+
+    .cabecalho__div-menu-hamburguer__lista__div
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cabecalho__span-sacola
+    {
+        display: table;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+    }
+
+   .cabecalho__span-sacola>a
+   {
+        display: table-cell;
+        vertical-align: middle;
+   }
 }
