@@ -126,3 +126,19 @@
     margin-top: 5.21875rem;
     
 }
+
+@media screen and (max-width:768px)
+{
+
+    .secao-nosso-servico
+    {
+        border-top: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao-nosso-servico__imagem
+    {
+        
+    }
+}

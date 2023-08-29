@@ -14,7 +14,6 @@
 {
     font-size: var(--tamanho-fonte-quinario);
     margin-bottom: 3.375rem;
-
 }
 
 .container__divisao-descricao
@@ -22,7 +21,7 @@
     display: flex;
 }
 
-.container__divisao-descricao > img
+.container__divisao__imagem
 {
     width: auto;
     padding-right: var(--espacamento-primario);
@@ -129,20 +128,11 @@
 
 .container__endereco
 {
-    /* display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: center;
-    align-content: end;
-    grid-template-areas:    ". ."
-                            "titulo redes-sociais";
-    border-left: var(--borda-principal);
-    border-bottom: var(--borda-principal) ; */
-
     display: flex;
     flex-direction: column;
 }
 
-.container__endereco__div
+.container__endereco__redes
 {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -153,29 +143,25 @@
     /* max-width: 200%; */
 }
 
-.container__endereco__titulo
+.container__endereco__redes__titulo
 {
-    grid-area: titulo;
+
     text-align: center;
     background-color: var(--cor-de-fundo);
     padding: var(--espacamento-terciario) 0 var(--espacamento-terciario) 0;
     border-right: var(--borda-principal);
-    border-top: var(--borda-principal);
-    
-    
-   
 }
 
-.container__endereco__redes-sociais
+.container__endereco__redes__redes-sociais
 {
-    grid-area: redes-sociais;
     background-color: var(--cor-de-fundo);
-    padding: var(--espacamento-terciario) 0 var(--espacamento-terciario) 0;
+    padding: var(--espacamento-terciario) 40px var(--espacamento-terciario) 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     column-gap: 2rem;
-    border-top: var(--borda-principal);
+    border-right: var(--borda-principal);
+    
     
 }
 
@@ -234,8 +220,6 @@
 {
     display: grid;
     grid-template-columns: 50% 50%;
-    /* border-bottom: 1px solid black; */
-    
 }
 
 .container__dados__contato__titulo,.container__dados__contato__texto
@@ -243,12 +227,20 @@
     border-left: var(--borda-principal);
 }
 
-.container__dados__contato__texto{
+.container__dados__contato
+{
+    border-bottom: none;
+}
+
+.container__dados__contato__texto
+{
     /* box-sizing: border-box; */
-    height: 54.5%;
+    height: 50%;
     display: grid;
     grid-template-areas: "." ".";
     align-content: center;
+    border-right: var(--borda-principal) ;
+    /* background-color: blue; */
 }
 
 .container__dados__contato__texto__primeiro
@@ -276,6 +268,13 @@
         grid-template-columns: 100%;
     }
 
+    .container-conversao
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        /* border-bottom: none; */
+    }
+
     .container__invisivel
     {
         display: none;
@@ -293,11 +292,81 @@
 
     .container__dados__contato__texto
     {
-        
+        height: auto;
+    }
+
+    .container__endereco
+    {
+        display: flex;
     }
 
     .container__endereco__imagem
     {
-        max-width: 10%;
+        max-width: 100%;
     }
+
+    .container__endereco__redes
+    {
+        border: var(--borda-principal);
+    }
+
+    .input-formulario
+    {
+        border: none;
+        border: var(--borda-principal);
+    }
+
+    .container__dados
+    {
+        border-bottom: none;
+    }
+
+    .container__dados__contato__texto
+    {
+        border: none;
+        border-right: var(--borda-principal);
+        border-bottom: var(--borda-principal);
+        height: 30%;
+    }
+}
+
+
+@media screen and (max-width:375px)
+{
+    .container__divisao
+    {
+        padding: 40px 16px;
+    }
+
+    .container__divisao__imagem
+    {
+        width: 155.5px;
+        height: 180px;
+        padding-right: 1rem;
+    }
+
+    .texto-principal
+    {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .texto-secundario
+    {
+        font-size: var(--tamanho-fonte-quartenario);
+        align-self: flex-end;
+        padding-left: var(--espacamento-terciario);
+    }
+
+    .container-grade__titulo
+    {
+        padding: 12px;
+    }
+
+    .container-grade__titulo__ancora
+    {
+        font-size: 14px;
+    } 
+
+
 }

@@ -28,7 +28,7 @@
 .cabecalho__divisao > a
 {
     display: inline-block;
-    padding: var(--espacamento-primario) 2rem;
+    padding: var(--espacamento-primario) 3.34375rem;
     
     
 }
@@ -129,4 +129,35 @@
         display: table-cell;
         vertical-align: middle;
    }
+}
+
+@media screen and (max-width:375px)
+{
+    .cabecalho__span-sacola
+    {
+        width: 48px;
+    }
+
+    .cabecalho__div-menu-hamburguer__lista__item__link
+    {
+        font-size: 18px;
+        font-weight: 500;
+    }   
+
+    .cabecalho__div-menu-hamburguer__lista__lista>li>a
+    {
+        font-size: 14px;
+    } 
+
+    .cabecalho__div-menu-hamburguer__lista
+    {
+        width: 100vw;
+    }
+
+    .container-grade__titulo
+    {
+        padding: 12px;
+    }
+
+    
 }

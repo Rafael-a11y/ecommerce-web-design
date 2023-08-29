@@ -3,6 +3,7 @@
     background-color: var(--cor-de-fundo);
     font-family: var(--fonte-principal);
     font-weight: var(--peso-primario);
+    /* border: var(--borda-principal); */
 }
 
 a
@@ -29,7 +30,7 @@ h2
 
 h3
 {
-    font-size: var(--tamanho-fonte-secundario);
+    font-size: 26px;
     font-weight: var(--peso-secundario);
 }
 
@@ -42,4 +43,12 @@ h5
 h6
 {
     font-size: var(--tamanho-fonte-quartenario);
+}
+
+@media screen and (max-width:375px)
+{
+    h1 
+    {
+        font-size: 40px;
+    }
 }
