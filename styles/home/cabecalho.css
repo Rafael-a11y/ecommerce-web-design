@@ -159,5 +159,9 @@
         padding: 12px;
     }
 
-    
+    .container__dados__contato__texto
+    {
+        padding: 40px 16px;
+        justify-content: start;
+    }
 }

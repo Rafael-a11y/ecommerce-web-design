@@ -137,8 +137,42 @@
         flex-direction: column;
     }
 
-    .secao-nosso-servico__imagem
+    .secao-nosso-servico__our-service
     {
-        
+        padding: 40px 1rem;
+        text-align: left;
+    }
+
+    .secao-nosso-servico__inscricao__conversao__topico
+    {
+        font-size: 12px;
+    }
+
+    .secao-nosso-servico__inscricao
+    {
+        padding: 40px 1rem;
+    }
+
+    .secao-nosso-servico__inscricao__botao
+    {
+        font-size: 14px;
+    }
+
+    .secao-nosso-servico__inscricao__conversao__topico
+    {
+        font-size: 12px;
+    }
+
+    .secao-inquire > p
+    {
+        font-size: 16px;
+    }
+
+    .secao-nosso-servico__inscricao__botao
+    {
+        box-sizing: border-box;
+        padding: 1rem;
+        padding-bottom: 0.875rem;
+        width: 100%;
     }
 }

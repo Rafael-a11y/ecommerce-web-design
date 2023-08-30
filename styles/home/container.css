@@ -64,6 +64,7 @@
     font-weight: var(--peso-terciario);
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 } 
 
 .container-grade__titulo__ancora > img
@@ -368,5 +369,102 @@
         font-size: 14px;
     } 
 
+    .container__titulo
+    {
+        padding: 40px 1rem;
+    }
 
+    .container__our-story > h4
+    {
+        font-size: 12px;
+    }
+
+    .container__ancora
+    {
+        box-sizing: border-box;
+        font-size: 14px;
+        margin: var(--espacamento-quinario) auto 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container__endereco__redes
+    {
+        border: var(--borda-principal);
+        grid-template-columns: 100%;
+        text-align: left;
+    }
+
+    .container__endereco__redes__titulo
+    {
+        text-align: left;
+        padding: 0.5rem var(--espacamento-terciario) var(--espacamento-terciario) var(--espacamento-terciario);
+    }
+
+    .container__endereco__redes__redes-sociais
+    {
+        justify-content: flex-start;
+        padding: 0.5rem var(--espacamento-terciario) var(--espacamento-terciario) var(--espacamento-terciario);
+    }
+
+    .container__responsivo__contato__texto
+    {
+        font-size: 18px;
+        font-weight: var(--peso-secundario);
+    }
+
+    #formulario-phone-number
+    {
+        margin-bottom: 0;
+        flex-direction: column;
+        row-gap: var(--espacamento-terciario);
+    }
+
+    .input-formulario,.botao-submit
+    {
+        box-sizing: border-box;
+        width: 100%;
+        font-weight: var(--peso-secundario);
+        font-size: 14px;
+    }
+
+    .container__dados 
+    {
+        /* display: grid;
+        grid-template-columns: 100%; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container__dados__contato__titulo
+    {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .container__dados__contato__texto
+    {
+        padding: 40px 1rem;
+        font-weight: var(--peso-terciario);
+        justify-content: start;
+    }
+
+    .container__dados__contato__texto__numero
+    {
+        font-size: 1rem;
+        font-weight: var(--peso-terciario);
+    }
+
+    .container__dados__contato__texto__horario
+    {
+        font-size: 12px;
+        font-weight: var(--peso-secundario);
+        justify-self: start;
+    }
+
+    .container__dados__contato__texto__endereco
+    {
+        font-size: 14px;
+        font-weight: var(--peso-terciario);
+    }
 }
