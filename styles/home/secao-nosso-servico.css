@@ -137,9 +137,34 @@
         flex-direction: column;
     }
 
+    .secao-nosso-servico__inscricao__texto
+    {
+        font-size: 18px;
+    }
+
+    .service-section 
+    {
+        box-sizing: border-box;
+        height: min-content;
+    }
+
+    .division__text
+    {
+        font-size: 32px;
+    }
+
+    .division__seta
+    {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:375px)
+{
     .secao-nosso-servico__our-service
     {
-        padding: 40px 1rem;
+        padding: 40px 16px;
         text-align: left;
     }
 
@@ -151,6 +176,11 @@
     .secao-nosso-servico__inscricao
     {
         padding: 40px 1rem;
+    }
+
+    .secao-nosso-servico__inscricao__texto
+    {
+        font-size: 16px;
     }
 
     .secao-nosso-servico__inscricao__botao
@@ -173,6 +203,17 @@
         box-sizing: border-box;
         padding: 1rem;
         padding-bottom: 0.875rem;
+        width: 100%;
+    }
+
+    .division__text
+    {
+        font-size: 22px;
+    }
+
+    .secao-octonaria__anchor
+    {
+        box-sizing: border-box;
         width: 100%;
     }
 }

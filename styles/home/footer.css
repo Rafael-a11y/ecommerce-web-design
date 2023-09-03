@@ -92,3 +92,28 @@
         border: var(--borda-principal);
     }
 }
+
+@media screen and (max-width:375px)
+{
+    .footer
+    {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .footer__divisao
+    {
+        padding: 40px 16px;
+        row-gap: var(--espacamento-terciario);
+    }
+
+    .footer__divisao__input::placeholder
+    {
+        font-size: 14px;
+    }
+
+    .divisao__topics > p
+    {
+        font-size: 14px;
+    }
+}
