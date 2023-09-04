@@ -156,7 +156,7 @@
 .container__endereco__redes__redes-sociais
 {
     background-color: var(--cor-de-fundo);
-    padding: var(--espacamento-terciario) 40px var(--espacamento-terciario) 40px;
+    padding: var(--espacamento-terciario) 2.5rem var(--espacamento-terciario) 2.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -246,12 +246,12 @@
 
 .container__dados__contato__texto__primeiro
 {
-    margin-bottom: 16px;
+    margin-bottom: var(--espacamento-terciario);
 } 
 
 .container__dados__contato__titulo
 {
-    padding: 16px 10px;
+    padding: var(--espacamento-terciario) 0.625rem;
     border-bottom: var(--borda-principal);
     text-align: center;
 }
@@ -259,10 +259,10 @@
 .container__dados__contato__texto
 {
     text-align: center;
-    padding: 24px;
+    padding: var(--espacamento-primario);
 }
 
-@media screen and (max-width:768px)
+@media screen and (max-width:1024px)
 {
     .container
     {
@@ -332,18 +332,18 @@
 }
 
 
-@media screen and (max-width:375px)
+@media screen and (max-width:428px)
 {
     .container__divisao
     {
-        padding: 40px 16px;
+        padding: var(--espacamento-senario) var(--espacamento-primario);
     }
 
     .container__divisao__imagem
     {
-        width: 155.5px;
-        height: 180px;
-        padding-right: 1rem;
+        width: 9.71875rem;
+        height: 11.25rem;
+        padding-right: 0.5rem;
     }
 
     .texto-principal
@@ -361,28 +361,28 @@
 
     .container-grade__titulo
     {
-        padding: 12px;
+        padding: 0.75rem;
     }
 
     .container-grade__titulo__ancora
     {
-        font-size: 14px;
+        font-size: var(--tamanho-fonte-quartenario);
     } 
 
     .container__titulo
     {
-        padding: 40px 1rem;
+        padding: var(--espacamento-senario) var(--espacamento-terciario);
     }
 
     .container__our-story > h4
     {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     .container__ancora
     {
         box-sizing: border-box;
-        font-size: 14px;
+        font-size: var(--tamanho-fonte-quartenario);
         margin: var(--espacamento-quinario) auto 0 auto;
         width: 100%;
         text-align: center;
@@ -409,7 +409,7 @@
 
     .container__responsivo__contato__texto
     {
-        font-size: 18px;
+        font-size: var(--tamanho-fonte-quinario);
         font-weight: var(--peso-secundario);
     }
 
@@ -425,7 +425,7 @@
         box-sizing: border-box;
         width: 100%;
         font-weight: var(--peso-secundario);
-        font-size: 14px;
+        font-size: var(--tamanho-fonte-quartenario);
     }
 
     .container__dados 
@@ -438,33 +438,33 @@
 
     .container__dados__contato__titulo
     {
-        padding: 1rem;
+        padding: var(--espacamento-terciario);
         text-align: left;
     }
 
     .container__dados__contato__texto
     {
-        padding: 40px 1rem;
+        padding: var(--espacamento-senario) var(--espacamento-terciario);
         font-weight: var(--peso-terciario);
         justify-content: start;
     }
 
     .container__dados__contato__texto__numero
     {
-        font-size: 1rem;
+        font-size: var(--tamanho-fonte-primario);
         font-weight: var(--peso-terciario);
     }
 
     .container__dados__contato__texto__horario
     {
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: var(--peso-secundario);
         justify-self: start;
     }
 
     .container__dados__contato__texto__endereco
     {
-        font-size: 14px;
+        font-size: var(--tamanho-fonte-quartenario);
         font-weight: var(--peso-terciario);
     }
 }

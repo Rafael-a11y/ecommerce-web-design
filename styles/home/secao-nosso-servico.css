@@ -127,7 +127,7 @@
     
 }
 
-@media screen and (max-width:768px)
+@media screen and (max-width:1024px)
 {
 
     .secao-nosso-servico
@@ -139,7 +139,7 @@
 
     .secao-nosso-servico__inscricao__texto
     {
-        font-size: 18px;
+        font-size: var(--tamanho-fonte-quinario);
     }
 
     .service-section 
@@ -150,7 +150,7 @@
 
     .division__text
     {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .division__seta
@@ -160,55 +160,55 @@
     
 }
 
-@media screen and (max-width:375px)
+@media screen and (max-width:428px)
 {
     .secao-nosso-servico__our-service
     {
-        padding: 40px 16px;
+        padding: var(--espacamento-senario) var(--espacamento-terciario);
         text-align: left;
     }
 
     .secao-nosso-servico__inscricao__conversao__topico
     {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     .secao-nosso-servico__inscricao
     {
-        padding: 40px 1rem;
+        padding: var(--espacamento-senario) var(--espacamento-terciario);
     }
 
     .secao-nosso-servico__inscricao__texto
     {
-        font-size: 16px;
+        font-size: var(--tamanho-fonte-primario);
     }
 
     .secao-nosso-servico__inscricao__botao
     {
-        font-size: 14px;
+        font-size: var(--tamanho-fonte-quartenario);
     }
 
     .secao-nosso-servico__inscricao__conversao__topico
     {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     .secao-inquire > p
     {
-        font-size: 16px;
+        font-size: var(--tamanho-fonte-primario);
     }
 
     .secao-nosso-servico__inscricao__botao
     {
         box-sizing: border-box;
-        padding: 1rem;
-        padding-bottom: 0.875rem;
+        padding: var(--espacamento-terciario);
+        padding-bottom: var(--tamanho-fonte-quartenario);
         width: 100%;
     }
 
     .division__text
     {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .secao-octonaria__anchor

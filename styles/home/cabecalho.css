@@ -28,7 +28,7 @@
 .cabecalho__divisao > a
 {
     display: inline-block;
-    padding: var(--espacamento-primario) 3.34375rem;
+    padding: var(--espacamento-primario) 3.82375rem;
     
     
 }
@@ -43,7 +43,7 @@
     border-left: var(--borda-principal);
 }
 
-@media screen and (max-width:768px)
+@media screen and (max-width:1024px)
 {
     .cabecalho__divisao,.cabecalho__div-menu-hamburguer__input,.cabecalho__div-menu-hamburguer__lista
     {
@@ -68,8 +68,8 @@
 
     .cabecalho__div-menu-hamburguer__span
     {
-        height: 40px;
-        width: 40px;
+        height: var(--espacamento-senario);
+        width: var(--espacamento-senario);
         background-image: url("../../assets/Menu.svg");
         background-repeat: no-repeat;
         background-position: center;
@@ -80,7 +80,7 @@
     {
         box-sizing: border-box;
         position: absolute;
-        width: 384px;
+        width: 24rem;
         background-color: var(--cor-de-fundo);
         border: var(--borda-principal);
     }
@@ -88,26 +88,26 @@
     .cabecalho__div-menu-hamburguer__lista__item,.cabecalho__div-menu-hamburguer__lista__lista,.cabecalho__div-menu-hamburguer__lista__div
     {
         box-sizing: border-box;
-        padding: 24px;
+        padding: var(--espacamento-primario);
         border-bottom: var(--borda-principal);
     }
 
     .cabecalho__div-menu-hamburguer__lista__item__link
     {
-        font-size: 21px;
-        font-weight: 500;
+        font-size: var(--tamanho-fonte-senario);
+        font-weight: var(--peso-secundario);
     }   
 
     .cabecalho__div-menu-hamburguer__lista__lista
     {
         display: flex;
         flex-direction: column;
-        row-gap: 16px;
+        row-gap: var(--espacamento-terciario);
     }
 
     .cabecalho__div-menu-hamburguer__lista__lista>li>a
     {
-        font-weight: 500;
+        font-weight: var(--peso-secundario);
     } 
 
     .cabecalho__div-menu-hamburguer__lista__div
@@ -119,8 +119,8 @@
     .cabecalho__span-sacola
     {
         display: table;
-        width: 40px;
-        height: 40px;
+        width: var(--espacamento-senario);
+        height: var(--espacamento-senario);
         text-align: center;
     }
 
@@ -131,22 +131,22 @@
    }
 }
 
-@media screen and (max-width:375px)
+@media screen and (max-width:428px)
 {
     .cabecalho__span-sacola
     {
-        width: 48px;
+        width: 3rem;
     }
 
     .cabecalho__div-menu-hamburguer__lista__item__link
     {
-        font-size: 18px;
-        font-weight: 500;
+        font-size: var(--tamanho-fonte-quinario);
+        font-weight: var(--peso-secundario);
     }   
 
     .cabecalho__div-menu-hamburguer__lista__lista>li>a
     {
-        font-size: 14px;
+        font-size: var(--tamanho-fonte-quartenario);
     } 
 
     .cabecalho__div-menu-hamburguer__lista
@@ -156,12 +156,12 @@
 
     .container-grade__titulo
     {
-        padding: 12px;
+        padding: 0.75rem;
     }
 
     .container__dados__contato__texto
     {
-        padding: 40px 16px;
+        padding: var(--espacamento-senario) var(--espacamento-terciario);
         justify-content: start;
     }
 }

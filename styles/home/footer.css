@@ -78,7 +78,7 @@
     column-gap: 2rem;
 }
 
-@media screen and (max-width:768px)
+@media screen and (max-width:1024px)
 {
     .footer
     {
@@ -93,7 +93,7 @@
     }
 }
 
-@media screen and (max-width:375px)
+@media screen and (max-width:428px)
 {
     .footer
     {
@@ -103,17 +103,17 @@
 
     .footer__divisao
     {
-        padding: 40px 16px;
+        padding: var(--espacamento-senario) var(--espacamento-terciario);
         row-gap: var(--espacamento-terciario);
     }
 
     .footer__divisao__input::placeholder
     {
-        font-size: 14px;
+        font-size: var(--tamanho-fonte-quartenario);
     }
 
     .divisao__topics > p
     {
-        font-size: 14px;
+        font-size: var(--tamanho-fonte-quartenario);
     }
 }
