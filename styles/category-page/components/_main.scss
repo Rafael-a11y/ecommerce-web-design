@@ -1,0 +1,166 @@
+@use '../abstract/variaveis' as valores-e-funcoes;
+@use "../../../boostrap-baixado/bootstrap-5.3.2/scss/variables" as variaveis-scss;
+@mixin definirDivGenerica($parametro-caminho-imagem)
+{
+    height: valores-e-funcoes.$altura-div-generica;
+    padding: 12px;
+    @include valores-e-funcoes.definirFundo($parametro-caminho-imagem);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-family: $fonte-gilroy;
+    font-weight: 500;
+
+    @media screen 
+    {
+        @media (min-width:768px) and (orientation: landscape)
+        {
+            
+        }
+    }
+
+    h2 
+    {
+        margin-bottom: 0.25rem;
+        font-size: 1rem;
+    }
+    p 
+    {
+        font-size: 14px;
+        margin: 0;
+        color: gray;
+    }
+}
+
+main 
+{
+    section 
+    {
+
+        @media screen 
+        {
+            @media (min-width:1200px)
+            {
+                border-bottom: 2px solid black;
+            }
+        }
+
+        .div-principal 
+        {
+            background: linear-gradient(0deg, rgba(18, 18, 18, 0.35) 0%, rgba(18, 18, 18, 0.35) 100%), url("../../../assets/category-page/Mobile/imagem-flor-fundo.png"), lightgray 50% / cover no-repeat;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 420px;
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+            @include valores-e-funcoes.definirBordaDireita(1200px);
+
+            @media screen 
+            {
+                @media (min-width: 768px)
+                {
+                    height: 500px;
+                }
+
+                @media (min-width: 1200px)
+                {
+                    height: calc(valores-e-funcoes.$altura-div-generica * 2);
+                }
+            }
+            
+            h1 
+            {
+                font-size: 40px;
+                @media screen 
+                {
+                    @media (min-width: 768px)
+                    {
+                        font-size: 4.1875rem;
+                    }
+                    @media (min-width:1200px)
+                    {
+                        font-size: 4,1875rem;
+                    }
+                }
+                
+            }
+        }
+
+        // .div-vazia
+        // {
+        //     @media screen 
+        //     {
+        //         @media (min-width:1200px)
+        //         {
+        //             height: calc(valores-e-funcoes.$altura-div-generica * 3);
+        //         }    
+        //     }
+        // }
+
+        .border-right
+        {
+            @include valores-e-funcoes.definirBordaDireita();
+        }
+
+        #div-item-1,#div-item-xl-1
+        {
+            $imagem-fundo: url("../../../assets/category-page/Mobile/snowfall.jpeg");
+            @include definirDivGenerica($imagem-fundo); 
+           
+        }
+        #div-item-2,#div-item-xl-2
+        {
+            $imagem-fundo: url("../../../assets/category-page/Mobile/pink-elegance.png");
+            @include definirDivGenerica($imagem-fundo); 
+           
+        }
+        #div-item-3,#div-item-xl-3
+        {
+            $imagem-fundo: url("../../../assets/category-page/Mobile/autumn-symphony.png");
+            @include definirDivGenerica($imagem-fundo); 
+           
+        }
+        #div-item-4,#div-item-xl-4
+        {
+            $imagem-fundo: url("../../../assets/category-page/Mobile/serenity.png");
+            @include definirDivGenerica($imagem-fundo); 
+           
+        }
+        #div-item-5,#div-item-xl-5
+        {
+            $imagem-fundo: url("../../../assets/category-page/Mobile/mystical-majesty.png");
+            @include definirDivGenerica($imagem-fundo); 
+           
+        }
+        #div-item-6,#div-item-xl-6
+        {
+            $imagem-fundo: url("../../../assets/category-page/Mobile/dawn\'s-delight.png");
+            @include definirDivGenerica($imagem-fundo); 
+           
+        }
+        #div-item-7,#div-item-xl-7
+        {
+            $imagem-fundo: url("../../../assets/category-page/Mobile/rustic-charm.png");
+            @include definirDivGenerica($imagem-fundo); 
+           
+        }
+        #div-item-8,#div-item-xl-8
+        {
+            $imagem-fundo: url("../../../assets/category-page/Mobile/rosy-delight.png");
+            @include definirDivGenerica($imagem-fundo); 
+           
+        }
+        #div-item-9,#div-item-xl-9
+        {
+            $imagem-fundo: url("../../../assets/category-page/Mobile/blue-harmony.png");
+            @include definirDivGenerica($imagem-fundo); 
+           
+        }
+        #div-item-10,#div-item-xl-10
+        {
+            $imagem-fundo: url("../../../assets/category-page/Mobile/blazing-blossoms.png");
+            @include definirDivGenerica($imagem-fundo); 
+           
+        }
+    }
+}

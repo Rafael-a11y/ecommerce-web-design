@@ -8,6 +8,9 @@
 .cabecalho__divisao
 {
     column-gap: 0;
+    width: 25%;
+    display: flex;
+    justify-content: center;
 }
 
 .cabecalho__div-menu-hamburguer
@@ -29,6 +32,7 @@
 {
     display: inline-block;
     padding: var(--espacamento-primario) 3.82375rem;
+    width: 100%;
     
     
 }

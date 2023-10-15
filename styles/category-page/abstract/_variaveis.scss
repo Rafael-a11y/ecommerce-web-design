@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../../../fontes-externas/fonte-gilroy/Gilroy-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+$fonte-principal: "Inter", sans-serif;
+$fonte-gilroy: "Gilroy";
+$altura-div-generica: 400px;
+
+@mixin definirFundo($caminho-imagem)
+{
+    background: $caminho-imagem, lightgray 50% / cover no-repeat;
+}
+
+@mixin definirBordaDireita($media-querie: 768px)
+{
+    @media screen
+    {
+        @if $media-querie == 768px
+        {
+            @media (min-width:768px)
+            {
+                border-right: 2px solid;
+                //Não preciso me preocupar em definir largura ou cor de borda pois as classes do bootstrap se encarregam disso.
+            }
+        }
+        @else
+        {
+            @media (min-width:1200px)
+            {
+                border-right: 2px solid;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+// Custom.scss
+// Opção B: Incluir partes do Bootstrap
+
+// 1. Incluir funções primeiro (para que você possa manipular cores, SVGs, cálculo, etc)
+@import "../scss/functions";
+
+// 2. Inclua aqui quaisquer substituições de variáveis ​​padrão
+
+// 3. Inclui o restante das folhas de estilo Bootstrap necessárias (incluindo quaisquer folhas de estilo de modo de cor separadas)
+@import "../scss/variables";
+@import "../scss/variables-dark";
+
+// Crie seu próprio mapa personalizado
+$custom-breakpoints:("mobile": 428px);
+$custom-colors:("custom-color-1":rgb(21, 99, 216), "custom-light-gray": #D2D2D7, "custom-gray": #808080);
+$custom-spacing:("6": $spacer * 2.5, "7": $spacer * 5, "2rem": $spacer * 2);
+
+// Merge os mapas
+$grid-breakpoints: map-merge($grid-breakpoints , $custom-breakpoints);
+$theme-colors: map-merge($theme-colors , $custom-colors);
+$spacers: map-merge($spacers , $custom-spacing);
+// 4. Inclua aqui quaisquer substituições de mapa ​​padrão
+
+// 5. Incluir o restante das peças necessárias
+@import "../scss/maps";
+@import "../scss/mixins";
+@import "../scss/root";
+
+// 6. Opcionalmente, inclua quaisquer outras peças conforme necessário
+@import "../scss/utilities";
+@import "../scss/reboot";
+@import "../scss/type";
+@import "../scss/images";
+@import "../scss/containers";
+@import "../scss/grid";
+@import "../scss/helpers";
+
+// 7. Opcionalmente, inclua a API de utilitários por último para gerar classes baseadas no mapa Sass em `_utilities.scss`
+@import "../scss/utilities/api";
+
+// 8. Adicione código adicional personalizado aqui.

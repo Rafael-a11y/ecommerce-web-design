@@ -21,6 +21,17 @@
     border-bottom: var(--borda-principal);
 }
 
+.secao-nosso-servico__imagem
+{
+    box-sizing: border-box;
+}
+
+.secao-nosso-servico__imagem > img
+{
+    border-bottom: 1px solid black;
+    height: 100%;
+}
+
 .secao-nosso-servico__inscricao
 {
     padding: var(--espacamento-secundario);

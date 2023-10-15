@@ -151,6 +151,7 @@
     background-color: var(--cor-de-fundo);
     padding: var(--espacamento-terciario) 0 var(--espacamento-terciario) 0;
     border-right: var(--borda-principal);
+    border-left: var(--borda-principal);
 }
 
 .container__endereco__redes__redes-sociais
@@ -225,12 +226,13 @@
 
 .container__dados__contato__titulo,.container__dados__contato__texto
 {
-    border-left: var(--borda-principal);
+    /* border-left: var(--borda-principal); */
 }
 
 .container__dados__contato
 {
     border-bottom: none;
+    box-sizing: border-box;
 }
 
 .container__dados__contato__texto
@@ -240,7 +242,8 @@
     display: grid;
     grid-template-areas: "." ".";
     align-content: center;
-    border-right: var(--borda-principal) ;
+    /* border-right: var(--borda-principal) ; */
+    height: max-content;
     /* background-color: blue; */
 }
 

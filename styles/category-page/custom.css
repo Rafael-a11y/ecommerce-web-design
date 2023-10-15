@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../../fontes-externas/fonte-gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: "Inter", sans-serif;
+  width: 100vw;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../../fontes-externas/fonte-gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+header {
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+header nav label {
+  padding: 12px;
+  margin: 0;
+  width: 48px;
+  height: 48px;
+}
+header nav label span {
+  padding: 0;
+  background-image: url("../../assets/Menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+}
+header nav .div-suspensa {
+  display: none;
+}
+header nav .div-suspensa .div-suspensa__lista li a {
+  font-size: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  header nav .div-suspensa .div-suspensa__lista li a {
+    font-size: 1.3125rem;
+  }
+}
+header nav .div-suspensa .div-suspensa__lista ul li a {
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  header nav .div-suspensa .div-suspensa__lista ul li a {
+    font-size: 1rem;
+  }
+}
+header nav span {
+  padding: 0.5rem;
+  width: 48px;
+  height: 48px;
+}
+header nav span a {
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+}
+header nav span a img {
+  height: -moz-max-content;
+  height: max-content;
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+header nav div {
+  width: 25%;
+}
+header nav div a {
+  width: 100%;
+}
+
+input:checked + label + .div-suspensa {
+  display: block;
+}
+
+input:checked + label > span {
+  background-image: url("../../../assets/close-button.svg");
+}
+@media screen and (min-width: 1200px) {
+  input:checked + label > span:not(:checked) {
+    background-image: url("../../../assets/Menu.svg");
+  }
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../../fontes-externas/fonte-gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@media screen and (min-width: 1200px) {
+  main section {
+    border-bottom: 2px solid black;
+  }
+}
+main section .div-principal {
+  background: linear-gradient(0deg, rgba(18, 18, 18, 0.35) 0%, rgba(18, 18, 18, 0.35) 100%), url("../../../assets/category-page/Mobile/imagem-flor-fundo.png"), lightgray 50%/cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+@media screen and (min-width: 1200px) {
+  main section .div-principal {
+    border-right: 2px solid;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section .div-principal {
+    height: 500px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main section .div-principal {
+    height: 800px;
+  }
+}
+main section .div-principal h1 {
+  font-size: 40px;
+}
+@media screen and (min-width: 768px) {
+  main section .div-principal h1 {
+    font-size: 4.1875rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main section .div-principal h1 {
+    font-size: 4, 1875rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section .border-right {
+    border-right: 2px solid;
+  }
+}
+main section #div-item-1, main section #div-item-xl-1 {
+  height: 400px;
+  padding: 12px;
+  background: url("../../../assets/category-page/Mobile/snowfall.jpeg"), lightgray 50%/cover no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 500;
+}
+main section #div-item-1 h2, main section #div-item-xl-1 h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+main section #div-item-1 p, main section #div-item-xl-1 p {
+  font-size: 14px;
+  margin: 0;
+  color: gray;
+}
+main section #div-item-2, main section #div-item-xl-2 {
+  height: 400px;
+  padding: 12px;
+  background: url("../../../assets/category-page/Mobile/pink-elegance.png"), lightgray 50%/cover no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 500;
+}
+main section #div-item-2 h2, main section #div-item-xl-2 h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+main section #div-item-2 p, main section #div-item-xl-2 p {
+  font-size: 14px;
+  margin: 0;
+  color: gray;
+}
+main section #div-item-3, main section #div-item-xl-3 {
+  height: 400px;
+  padding: 12px;
+  background: url("../../../assets/category-page/Mobile/autumn-symphony.png"), lightgray 50%/cover no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 500;
+}
+main section #div-item-3 h2, main section #div-item-xl-3 h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+main section #div-item-3 p, main section #div-item-xl-3 p {
+  font-size: 14px;
+  margin: 0;
+  color: gray;
+}
+main section #div-item-4, main section #div-item-xl-4 {
+  height: 400px;
+  padding: 12px;
+  background: url("../../../assets/category-page/Mobile/serenity.png"), lightgray 50%/cover no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 500;
+}
+main section #div-item-4 h2, main section #div-item-xl-4 h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+main section #div-item-4 p, main section #div-item-xl-4 p {
+  font-size: 14px;
+  margin: 0;
+  color: gray;
+}
+main section #div-item-5, main section #div-item-xl-5 {
+  height: 400px;
+  padding: 12px;
+  background: url("../../../assets/category-page/Mobile/mystical-majesty.png"), lightgray 50%/cover no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 500;
+}
+main section #div-item-5 h2, main section #div-item-xl-5 h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+main section #div-item-5 p, main section #div-item-xl-5 p {
+  font-size: 14px;
+  margin: 0;
+  color: gray;
+}
+main section #div-item-6, main section #div-item-xl-6 {
+  height: 400px;
+  padding: 12px;
+  background: url("../../../assets/category-page/Mobile/dawn's-delight.png"), lightgray 50%/cover no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 500;
+}
+main section #div-item-6 h2, main section #div-item-xl-6 h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+main section #div-item-6 p, main section #div-item-xl-6 p {
+  font-size: 14px;
+  margin: 0;
+  color: gray;
+}
+main section #div-item-7, main section #div-item-xl-7 {
+  height: 400px;
+  padding: 12px;
+  background: url("../../../assets/category-page/Mobile/rustic-charm.png"), lightgray 50%/cover no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 500;
+}
+main section #div-item-7 h2, main section #div-item-xl-7 h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+main section #div-item-7 p, main section #div-item-xl-7 p {
+  font-size: 14px;
+  margin: 0;
+  color: gray;
+}
+main section #div-item-8, main section #div-item-xl-8 {
+  height: 400px;
+  padding: 12px;
+  background: url("../../../assets/category-page/Mobile/rosy-delight.png"), lightgray 50%/cover no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 500;
+}
+main section #div-item-8 h2, main section #div-item-xl-8 h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+main section #div-item-8 p, main section #div-item-xl-8 p {
+  font-size: 14px;
+  margin: 0;
+  color: gray;
+}
+main section #div-item-9, main section #div-item-xl-9 {
+  height: 400px;
+  padding: 12px;
+  background: url("../../../assets/category-page/Mobile/blue-harmony.png"), lightgray 50%/cover no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 500;
+}
+main section #div-item-9 h2, main section #div-item-xl-9 h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+main section #div-item-9 p, main section #div-item-xl-9 p {
+  font-size: 14px;
+  margin: 0;
+  color: gray;
+}
+main section #div-item-10, main section #div-item-xl-10 {
+  height: 400px;
+  padding: 12px;
+  background: url("../../../assets/category-page/Mobile/blazing-blossoms.png"), lightgray 50%/cover no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 500;
+}
+main section #div-item-10 h2, main section #div-item-xl-10 h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+main section #div-item-10 p, main section #div-item-xl-10 p {
+  font-size: 14px;
+  margin: 0;
+  color: gray;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../../fontes-externas/fonte-gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+footer {
+  font-family: "Gilroy";
+  box-sizing: border-box;
+}
+footer .footer__div {
+  box-sizing: border-box;
+}
+footer .footer__div form input {
+  padding: 12px 0;
+}
+footer .footer__div form input::-moz-placeholder {
+  font-size: 14px;
+  font-size: "Gilroy";
+  font-weight: 500;
+}
+footer .footer__div form input::placeholder {
+  font-size: 14px;
+  font-size: "Gilroy";
+  font-weight: 500;
+}
+footer .footer__div form buttom {
+  background-color: #121212;
+  padding-bottom: 14px !important;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  footer .footer__div form buttom {
+    font-size: 1rem;
+  }
+}
+footer .footer__div h5 {
+  font-size: 18px !important;
+}
+@media screen and (min-width: 768px) {
+  footer .footer__div h5 {
+    font-size: 21px !important;
+  }
+}
+footer .footer__div div p {
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  footer .footer__div div .p-destaque {
+    font-size: 1rem;
+  }
+}
+footer .footer__div div div {
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+@media screen and (min-width: 768px) {
+  footer .footer__div-1 {
+    border-right: 2px solid;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer .footer__div-2 {
+    border-right: 2px solid;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .footer__div-3 {
+    border-right: 2px solid;
+  }
+}/*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,130 @@
+@use '../abstract/variaveis' as valores-e-funcoes ; 
+header
+{
+    box-sizing: border-box;
+    font-family: "Gilroy";
+    
+    nav 
+    {
+        input 
+        {
+
+        }
+        label
+        {
+
+            padding: 12px;
+            margin: 0;
+            width: 48px;
+            height: 48px;
+            
+            span 
+            {
+                padding: 0;
+                background-image: url("../../assets/Menu.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                height: 24px;
+                width: 24px; 
+                display: inline-block;
+            }
+        }
+
+        .div-suspensa
+        {
+            display: none;
+            .div-suspensa__lista
+            {
+                li
+                {
+                    a 
+                    {
+                        font-size: 1.125rem;
+                        @media screen 
+                        {
+                            @media (min-width:768px)
+                            {
+                                font-size: 1.3125rem;
+                            }
+                        }
+                    }
+                }
+
+                ul
+                {
+                    li 
+                    {
+                        a 
+                        {
+                            font-size: 14px;
+                            @media screen 
+                            {
+                                @media (min-width:768px)
+                                {
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        span 
+        {
+
+            padding: 0.5rem;
+            width: 48px;
+            height: 48px;
+            
+            
+            a 
+            {
+                box-sizing: border-box;
+                width: 24px;
+                height: 24px;
+                
+                img 
+                {
+                    height: max-content;
+                    display: block;
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+        }
+
+        div
+        {
+            width: 25%;
+            a 
+            {
+                width: 100%;
+            }
+        }
+        
+    }
+}
+
+input:checked+label+.div-suspensa
+{
+    display: block;
+    
+}
+input:checked+label>span
+{
+    background-image: url("../../../assets/close-button.svg");
+
+    @media screen
+    {
+        @media (min-width: 1200px)
+        {
+            &:not(:checked)
+            {
+                background-image: url("../../../assets/Menu.svg");
+            }
+        }
+    }
+
+}
