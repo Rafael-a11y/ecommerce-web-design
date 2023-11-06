@@ -19,6 +19,7 @@
     text-align: center;
     grid-column: 1 / 3;
     border-bottom: var(--borda-principal);
+    margin-bottom: 0;
 }
 
 .secao-nosso-servico__imagem
@@ -88,7 +89,7 @@
 
 .service-section a
 {
-    color: var(--cor-de-fundo);
+    color: var(--cor-de-fundo) !important;
     border-color: var(--cor-de-fundo);
 }
 
