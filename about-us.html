@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = 
+        {
+            theme: 
+            {
+                extend: 
+                {
+                    colors: 
+                    {
+                       
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+       @layer components
+        {
+
+            @font-face 
+            {
+                font-family: "Zapfino";
+                src: url("./fontes-externas/fonte-zapfino/ZapfinoExtraLTPro.otf") format("opentype");
+                font-weight: normal;
+                font-style: normal;
+            }
+            @font-face 
+            {
+                font-family: "Gilroy";
+                src: url("./fontes-externas/fonte-gilroy/Gilroy-Medium.ttf") format("truetype");
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            .menu-suspenso
+            {
+                background-image: url("./assets/Menu.svg");
+            }
+
+            .bag-anchor
+            {
+                background-image: url("./assets/shopping_bag.svg");
+            }
+
+            .lista-suspensa__list-item
+            {
+                @apply p-6 border-b-2 border-black  text-neutral-900 text-lg font-medium font-['Gilroy'] leading-snug;
+            }
+
+            .lista-suspensa__lista__list-item
+            {
+                @apply w-[100%] text-neutral-900 text-sm font-medium font-['Gilroy'];
+            }
+        }
+        
+      
+    </style>
+    <title>About Us</title>
+</head>
+<body class="">
+    <header class=" border-2  border-black">
+        <nav class="flex align-items-center justify-between relative box-border">
+            <input type="checkbox" id="menu-hamburguer" class="hidden peer">
+            <label for="menu-hamburguer" class="flex">
+                <span class="menu-suspenso bg-no-repeat bg-center bg-contain w-6 h-6 inline-block">
+                </span>
+            </label>
+            
+            <div class="hidden peer-checked:inline-block self-stretch w-full flex-col justify-start items-start flex absolute top-[100%] left-[0] bg-white border-2 border-black ">
+                <ul class="">
+                    <li class="lista-suspensa__list-item">
+                        <a href="#" class="">
+                            Sign in
+                        </a>
+                    </li>
+    
+                    <li class="lista-suspensa__list-item">
+                        <a href="#" class="">
+                            Shop
+                        </a>
+                    </li>
+                    <li class="lista-suspensa__list-item">
+                        <a href="#" class="">
+                            Service
+                        </a>
+                    </li>
+                    <li class="lista-suspensa__list-item ">
+                        <a href="#" class="">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="lista-suspensa__list-item">
+                        <a href="#" class="">
+                            About us
+                        </a>
+                    </li>
+                    <ul class="flex flex-col justify-start items-start gap-4 p-6">
+                        <li class="lista-suspensa__lista__list-item">
+                            <a href="#" class="">
+                                Shipping & returns
+                            </a>
+                        </li>
+                        <li class="lista-suspensa__lista__list-item">
+                            <a href="#" class="">
+                                Terms & conditions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="lista-suspensa__lista__list-item">
+                                Privacy policy
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+                <div class="p-6 inline-flex justify-between items-center w-full ">
+                    <a href="#" class="">
+                        <img src="./assets/Brands/Instagram.png" alt="" class="">
+                    </a>
+                    <a href="#" class="">
+                        <img src="./assets/Brands/Pinterest.png" alt="">
+                    </a>
+                    <a href="#" class="">
+                        <img src="./assets/Brands/Facebook.png" alt="">
+                    </a>
+                    <a href="#" class="">
+                        <img src="./assets/Brands/Twitter.png" alt="">
+                    </a>
+                    <a href="#" class="">
+                        <img src="./assets/Brands/Telegram.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <span class="bag-anchor bg-no-repeat bg-center bg-contain w-6 h-6 inline-block">
+            </span>
+        </nav>
+    </header>
+    <main class="">
+        <section class="py-10 px-4 text-center flex flex-col justify-center gap-y-16 h-[560px]">
+            <div class="flex-col justify-between items-center inline-flex gap-6">
+                <h2 class="text-neutral-900 text-[34px] font-semibold font-['Gilroy'] leading-[40.80px]">Our Story</h2>
+                <h3 class="text-neutral-900 text-xl font-normal font-['Zapfino']">About</h3>
+                <h2 class="text-neutral-900 text-[34px] font-semibold font-['Gilroy'] leading-[40.80px]">Kyiv LuxeBouquets</h2>
+                <p class="text-center">
+                    <span class="text-neutral-900 text-opacity-90 text-lg font-normal font-['Gilroy']">
+                        Discover Uniquely Crafted Bouquets and Gifts for Any Occasion: Spread Joy with Our Online Flower Delivery Service
+                    </span>
+                </p>
+            </div>
+            <div>
+                <p>lklk</p>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="">
+
+    </footer>
+</body>
+</html>

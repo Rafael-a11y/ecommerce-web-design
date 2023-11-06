@@ -8,10 +8,10 @@
 
 a
 {
-    text-decoration: none;
-    color: var(--preto-primario);
-    font-size: var(--tamanho-fonte-primario);
-    font-weight: var(--peso-secundario);
+    text-decoration: none !important;
+    color: var(--preto-primario) !important;
+    font-size: var(--tamanho-fonte-primario) !important;
+    font-weight: var(--peso-secundario) !important;
 
 }
 
