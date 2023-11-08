@@ -47,16 +47,37 @@
             .bag-anchor
             {
                 background-image: url("./assets/shopping_bag.svg");
+                background-position: center;
+                background-size: contain;
             }
 
             .lista-suspensa__list-item
             {
-                @apply p-6 border-b-2 border-black  text-neutral-900 text-lg font-medium font-['Gilroy'] leading-snug;
+                @apply p-6 border-b-2 border-neutral-900 text-neutral-900 text-lg font-medium font-['Gilroy'] leading-snug;
             }
 
             .lista-suspensa__lista__list-item
             {
                 @apply w-[100%] text-neutral-900 text-sm font-medium font-['Gilroy'];
+            }
+            .background-image-modelo-loira
+            {
+                background-image: url('./assets/about-us-page/young-archtect-woman.jpeg');
+            }
+
+            .background-image-flourista-trabalhando
+            {
+                background-image: url('./assets/about-us-page/flourist-make-a-bouquet.jpeg');
+            }
+
+            .background-image-vaso-de-tapete
+            {
+                background-image: url('./assets/about-us-page/jute-ruk-book-vase-fragrance-diffuse.jpeg');
+            }
+
+            .background-image-dia-dos-namorados
+            {
+                background-image: url('./assets/about-us-page/valentines-day-background-gift-rose.jpeg');
             }
         }
         
@@ -65,15 +86,15 @@
     <title>About Us</title>
 </head>
 <body class="">
-    <header class=" border-2  border-black">
-        <nav class="flex align-items-center justify-between relative box-border">
+    <header class=" border-2  border-neutral-900">
+        <nav class="flex align-items-center justify-between relative box-border ">
             <input type="checkbox" id="menu-hamburguer" class="hidden peer">
-            <label for="menu-hamburguer" class="flex">
+            <label for="menu-hamburguer" class="flex p-3 border-r-2 border-neutral-900">
                 <span class="menu-suspenso bg-no-repeat bg-center bg-contain w-6 h-6 inline-block">
                 </span>
             </label>
             
-            <div class="hidden peer-checked:inline-block self-stretch w-full flex-col justify-start items-start flex absolute top-[100%] left-[0] bg-white border-2 border-black ">
+            <div class="hidden peer-checked:inline-block self-stretch w-full flex-col justify-start items-start flex absolute top-[100%] left-[0] bg-white border-2 border-neutral-900 ">
                 <ul class="">
                     <li class="lista-suspensa__list-item">
                         <a href="#" class="">
@@ -138,15 +159,17 @@
                 </div>
             </div>
 
-            <span class="bag-anchor bg-no-repeat bg-center bg-contain w-6 h-6 inline-block">
-            </span>
+            <div class="p-3 border-l-2 border-neutral-900">
+                <span class="bag-anchor bg-no-repeat bg-center bg-contain w-6 h-6 inline-block">
+                </span>
+            </div>
         </nav>
     </header>
-    <main class="">
-        <section class="py-10 px-4 text-center flex flex-col justify-center gap-y-16 h-[560px]">
+    <main class="border-2 border-neutral-900 border-b-2 border-t-0">
+        <section class="py-10 px-4 text-center flex flex-col justify-center gap-y-16 h-[560px] border-b-2 border-neutral-900">
             <div class="flex-col justify-between items-center inline-flex gap-6">
                 <h2 class="text-neutral-900 text-[34px] font-semibold font-['Gilroy'] leading-[40.80px]">Our Story</h2>
-                <h3 class="text-neutral-900 text-xl font-normal font-['Zapfino']">About</h3>
+                <h3 class="text-neutral-900 text-[1.25rem] font-normal font-['Zapfino']">About</h3>
                 <h2 class="text-neutral-900 text-[34px] font-semibold font-['Gilroy'] leading-[40.80px]">Kyiv LuxeBouquets</h2>
                 <p class="text-center">
                     <span class="text-neutral-900 text-opacity-90 text-lg font-normal font-['Gilroy']">
@@ -155,13 +178,205 @@
                 </p>
             </div>
             <div>
-                <p>lklk</p>
+                <div class="justify-center items-center gap-4 flex">
+                    <a href="#" class="p-3 rounded-[100px] border border-neutral-900">
+                        <img src="./assets/Brands/Instagram.png" alt="">
+                    </a>
+                    <a href="#"  class="p-3 rounded-[100px] border border-neutral-900">
+                        <img src="./assets/Brands/Pinterest.png" alt="">
+                    </a>
+                    <a href="#"  class="p-3 rounded-[100px] border border-neutral-900">
+                        <img src="./assets/Brands/Facebook.png" alt="">
+                    </a>
+                    <a href="#"  class="p-3 rounded-[100px] border border-neutral-900">
+                        <img src="./assets/Brands/Twitter.png" alt="">
+                    </a>
+                    <a href="#"  class="p-3 rounded-[100px] border border-neutral-900">
+                        <img src="./assets/Brands/Telegram.png" alt="">
+                    </a>
+                </div>
             </div>
-            
+        </section>
+        <section class="border-b-2 border-neutral-900">
+            <div class="bg-neutral-900 bg-opacity-25 h-[30rem] background-image-modelo-loira bg-no-repeat bg-cover bg-center border-b-2 border-neutral-900"></div>
+            <div class="py-10 px-4">
+                <p class="text-center text-neutral-900 text-xs font-medium font-['Gilroy'] uppercase leading-[14.40px] mb-6">
+                    OUR STORY
+                </p>
+                <h2 class="text-center text-neutral-900 text-[26px] font-medium font-['Gilroy'] leading-loose mb-4">
+                    Our Founder's Passion 
+                </h2>
+                <p class="text-center text-neutral-900 text-opacity-90 text-base font-normal font-['Gilroy'] leading-snug">
+                    Kyiv LuxeBouquets was founded in 2010 by Natalia Zelinska  with the goal of bringing unique and exquisite bouquets to the people of Kyiv. Natalia has always had a passion for flowers and design, and his vision was to create a local floral studio that would specialize in the creation and delivery of fresh, beautiful, and distinctive bouquets.
+                </p>
+            </div>
+        </section>
+        <section class="border-b-2 border-neutral-900">
+            <div class="bg-neutral-900 bg-opacity-25 h-[30rem] background-image-flourista-trabalhando bg-no-repeat bg-cover bg-center border-b-2 border-neutral-900"></div>
+            <div class="py-10 px-4">
+                <h2 class="text-center text-neutral-900 text-[26px] font-medium font-['Gilroy'] leading-loose mb-4">
+                    Expertly Crafted Bouquets 
+                </h2>
+                <p class="text-center text-neutral-900 text-opacity-90 text-base font-normal font-['Gilroy'] leading-snug">
+                    At Kyiv LuxeBouquets, we take pride in our team of talented and experienced florists who carefully select each bloom, ensuring that only the freshest and most stunning flowers make it into our bouquets. We work directly with farms to source the highest quality flowers, and our skilled florists expertly craft each bouquet to perfection.
+                </p>
+            </div>
+        </section>
+        <section class="border-b-2 border-neutral-900">
+            <div class="bg-neutral-900 bg-opacity-25 h-[30rem] background-image-vaso-de-tapete bg-no-repeat bg-cover bg-center border-b-2 border-neutral-900"></div>
+            <div class="py-10 px-4">
+                <h2 class="text-center text-neutral-900 text-[26px] font-medium font-['Gilroy'] leading-loose mb-4">
+                    Bouquets, Gifts & Ambiance
+                </h2>
+                <p class="text-center text-neutral-900 text-opacity-90 text-base font-normal font-['Gilroy'] leading-snug">
+                    In addition to our stunning bouquets, we also offer a collection of dried bouquets, house plants, and fragrant candles from luxury brands to create the perfect ambiance. We believe that sending flowers, plants, and gifts should be easy and stress-free, which is why we offer same or next-day delivery throughout Kyiv.
+                </p>
+            </div>
+        </section>
+        <section class="border-b-2 border-neutral-900">
+            <div class="bg-neutral-900 bg-opacity-25 h-[30rem] background-image-dia-dos-namorados bg-no-repeat bg-cover bg-center border-b-2 border-neutral-900">
+            </div>
+            <div class="py-10 px-4">
+                <h2 class="text-center text-neutral-900 text-[26px] font-medium font-['Gilroy'] leading-loose mb-4">
+                    Making Every Day Special
+                </h2>
+                <p class="text-center text-neutral-900 text-opacity-90 text-base font-normal font-['Gilroy'] leading-snug">
+                    Our mission is simple: to make every day special and memorable for our customers. We are dedicated to providing the highest quality flowers, exceptional customer service, and a seamless online experience that will make you feel confident and satisfied with your purchase.Thank you for choosing Kyiv LuxeBouquets. We look forward to bringing joy and happiness to your life with our beautiful bouquets and gifts.
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="px-4 py-10 border-t border-b border-neutral-900 flex-col justify-center items-center gap-4 flex">
+                <h2 class="text-center text-neutral-900 text-[34px] font-semibold font-['Gilroy'] leading-[40.80px]">
+                    Discover Our Beautiful Bouquets
+                </h2>
+                <p class="text-center text-neutral-900 text-opacity-90 text-lg font-medium font-['Gilroy'] leading-[25.20px]">
+                    Explore our collection of exquisite bouquets and surprise your loved ones with the perfect gift. Click the button below to start shopping
+                </p>
+                <button class="h-[2.875rem] w-[16.875rem] mt-10 text-white text-sm font-medium font-['Gilroy'] uppercase leading-[14px] tracking-tight bg-black">
+                    shop now
+                </button>
+            </div>
         </section>
     </main>
     <footer class="">
-
+        <section class="">
+            <p class="">Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines Day, Mothers Day, Christmas... Reminds you 7 days before. No spam or sharing your address</p>
+            <form action="" class="">
+                <input type="email" placeholder="Your Email" class="">
+                <buttom class="">
+                    Remind
+                </buttom>
+            </form>
+        </section>
+        <section class="">
+            <h5 class="">
+                Contact Us
+            </h5>
+            <div class="">
+                <p class="">Address</p>
+                <p class="">15/4 Khreshchatyk Street, Kyiv </p>
+            </div>
+            <div class="">
+                <p class="">
+                    Phone
+                </p>
+                <p class="">
+                    +380980099777
+                </p>
+            </div>
+            <div class="">
+                <p class="">
+                    General Enquiry:
+                </p>
+                <p class="">
+                    Kiev.Florist.Studio@gmail.com
+                </p>
+            </div>
+            <div>
+                <h5 class="">
+                    Follow Us
+                </h5>
+                <div class="">
+                    <a href="#" class="">
+                        <img src="./assets/Brands/Instagram.png" alt="">
+                    </a>
+                    <a href="#" class="">
+                        <img src="./assets/Brands/Pinterest.png" alt="">
+                    </a>
+                    <a href="#" class="">
+                        <img src="./assets/Brands/Facebook.png" alt="">
+                    </a>
+                    <a href="#" class="">
+                        <img src="./assets/Brands/Twitter.png" alt="">
+                    </a>
+                    <a href="#" class="">
+                        <img src="./assets/Brands/Telegram.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="">
+            <h5 class="">
+                Shop
+            </h5>
+            <div class="">
+                <p class="">
+                    All Products
+                </p>
+                <p class="">
+                    Fresh Flowers 
+                </p>
+                <p class="">
+                    Dried Flowers
+                </p>
+                <p class="">
+                    Live Plants 
+                </p>
+                <p class="">
+                    Designer Vases
+                </p>
+                <p class="">
+                    Aroma Candles 
+                </p>
+                <p class="">
+                    Freshener Diffuser 
+                </p>
+            </div>
+            <h5 class="">Service</h5>
+            <div class="">
+                <p class="">
+                    Flower Subcription
+                </p>
+                <p class="">
+                    Wedding & Event Decor
+                </p>
+            </div>
+        </section>
+        <section class="">
+            <h5 class="">
+                Abouts Us
+            </h5>
+            <div class="">
+                <p class="">
+                    Our story
+                </p>
+                <p class="">
+                    Blog
+                </p>
+            </div>
+            <div>
+                <p class="">
+                    Shipping & returns
+                </p>
+                <p class="">
+                    Terms & conditions
+                </p>
+                <p class="">
+                    Privacy policy
+                </p>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
